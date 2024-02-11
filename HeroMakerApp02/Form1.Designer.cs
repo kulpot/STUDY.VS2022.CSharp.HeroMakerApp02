@@ -31,15 +31,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.chk_fly = new System.Windows.Forms.CheckBox();
-            this.chk_xray = new System.Windows.Forms.CheckBox();
-            this.chk_invisible = new System.Windows.Forms.CheckBox();
+            this.chk_energy = new System.Windows.Forms.CheckBox();
             this.chk_luck = new System.Windows.Forms.CheckBox();
             this.chk_fart = new System.Windows.Forms.CheckBox();
             this.chk_water_breath = new System.Windows.Forms.CheckBox();
             this.chk_timecontrol = new System.Windows.Forms.CheckBox();
+            this.chk_invisible = new System.Windows.Forms.CheckBox();
+            this.chk_xray = new System.Windows.Forms.CheckBox();
+            this.chk_fly = new System.Windows.Forms.CheckBox();
             this.btn_create = new System.Windows.Forms.Button();
-            this.chk_energy = new System.Windows.Forms.CheckBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +63,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.listBox1);
             this.groupBox1.Controls.Add(this.chk_energy);
             this.groupBox1.Controls.Add(this.chk_luck);
             this.groupBox1.Controls.Add(this.chk_fart);
@@ -76,35 +80,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Special Abilities";
             // 
-            // chk_fly
+            // chk_energy
             // 
-            this.chk_fly.AutoSize = true;
-            this.chk_fly.Location = new System.Drawing.Point(6, 28);
-            this.chk_fly.Name = "chk_fly";
-            this.chk_fly.Size = new System.Drawing.Size(39, 17);
-            this.chk_fly.TabIndex = 0;
-            this.chk_fly.Text = "Fly";
-            this.chk_fly.UseVisualStyleBackColor = true;
-            // 
-            // chk_xray
-            // 
-            this.chk_xray.AutoSize = true;
-            this.chk_xray.Location = new System.Drawing.Point(6, 51);
-            this.chk_xray.Name = "chk_xray";
-            this.chk_xray.Size = new System.Drawing.Size(81, 17);
-            this.chk_xray.TabIndex = 1;
-            this.chk_xray.Text = "xRay Vision";
-            this.chk_xray.UseVisualStyleBackColor = true;
-            // 
-            // chk_invisible
-            // 
-            this.chk_invisible.AutoSize = true;
-            this.chk_invisible.Location = new System.Drawing.Point(6, 74);
-            this.chk_invisible.Name = "chk_invisible";
-            this.chk_invisible.Size = new System.Drawing.Size(70, 17);
-            this.chk_invisible.TabIndex = 2;
-            this.chk_invisible.Text = "Invisibility";
-            this.chk_invisible.UseVisualStyleBackColor = true;
+            this.chk_energy.AutoSize = true;
+            this.chk_energy.Location = new System.Drawing.Point(6, 97);
+            this.chk_energy.Name = "chk_energy";
+            this.chk_energy.Size = new System.Drawing.Size(95, 17);
+            this.chk_energy.TabIndex = 4;
+            this.chk_energy.Text = "Absorb Energy";
+            this.chk_energy.UseVisualStyleBackColor = true;
             // 
             // chk_luck
             // 
@@ -146,6 +130,36 @@
             this.chk_timecontrol.Text = "Time Control";
             this.chk_timecontrol.UseVisualStyleBackColor = true;
             // 
+            // chk_invisible
+            // 
+            this.chk_invisible.AutoSize = true;
+            this.chk_invisible.Location = new System.Drawing.Point(6, 74);
+            this.chk_invisible.Name = "chk_invisible";
+            this.chk_invisible.Size = new System.Drawing.Size(70, 17);
+            this.chk_invisible.TabIndex = 2;
+            this.chk_invisible.Text = "Invisibility";
+            this.chk_invisible.UseVisualStyleBackColor = true;
+            // 
+            // chk_xray
+            // 
+            this.chk_xray.AutoSize = true;
+            this.chk_xray.Location = new System.Drawing.Point(6, 51);
+            this.chk_xray.Name = "chk_xray";
+            this.chk_xray.Size = new System.Drawing.Size(81, 17);
+            this.chk_xray.TabIndex = 1;
+            this.chk_xray.Text = "xRay Vision";
+            this.chk_xray.UseVisualStyleBackColor = true;
+            // 
+            // chk_fly
+            // 
+            this.chk_fly.AutoSize = true;
+            this.chk_fly.Location = new System.Drawing.Point(6, 28);
+            this.chk_fly.Name = "chk_fly";
+            this.chk_fly.Size = new System.Drawing.Size(39, 17);
+            this.chk_fly.TabIndex = 0;
+            this.chk_fly.Text = "Fly";
+            this.chk_fly.UseVisualStyleBackColor = true;
+            // 
             // btn_create
             // 
             this.btn_create.Location = new System.Drawing.Point(690, 405);
@@ -156,15 +170,22 @@
             this.btn_create.UseVisualStyleBackColor = true;
             this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
             // 
-            // chk_energy
+            // listBox1
             // 
-            this.chk_energy.AutoSize = true;
-            this.chk_energy.Location = new System.Drawing.Point(6, 97);
-            this.chk_energy.Name = "chk_energy";
-            this.chk_energy.Size = new System.Drawing.Size(95, 17);
-            this.chk_energy.TabIndex = 4;
-            this.chk_energy.Text = "Absorb Energy";
-            this.chk_energy.UseVisualStyleBackColor = true;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(6, 145);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 129);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Office Location";
             // 
             // Form1
             // 
@@ -198,6 +219,8 @@
         private System.Windows.Forms.CheckBox chk_timecontrol;
         private System.Windows.Forms.Button btn_create;
         private System.Windows.Forms.CheckBox chk_energy;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
