@@ -11,7 +11,7 @@ using System.Windows.Forms;
 //------------------ C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
 //ref link:https://www.youtube.com/watch?v=UgbzxnlckxY&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=15
 
-// label, textbox(MessageBox), groupbox, checkbox x8(abilities[0-7], button(btn_create),
+// label, textbox(MessageBox), groupbox, checkbox x8(abilities[0-7], button(btn_create), status_message
 
 //----------------- C# avatar maker app 02 How to use a listbox tutorial -------------------------------
 //ref link:https://www.youtube.com/watch?v=ihBNF1j5qNU&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=14
