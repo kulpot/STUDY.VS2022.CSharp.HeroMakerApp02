@@ -16,7 +16,7 @@ using System.Windows.Forms;
 //----------------- C# avatar maker app 02 How to use a listbox tutorial -------------------------------
 //ref link:https://www.youtube.com/watch?v=ihBNF1j5qNU&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=14
 
-// listbox(Item Collection), label(Office Location)
+// listbox(Item Collection)(SelectionMode:MultiSimple), label(Office Locations)
 
 namespace HeroMaker
 {
@@ -26,6 +26,8 @@ namespace HeroMaker
         {
             InitializeComponent();
         }
+
+        //------START---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
 
         private void btn_create_Click(object sender, EventArgs e)
         {
@@ -39,6 +41,21 @@ namespace HeroMaker
             abilities[5] = chk_fart.Checked;
             abilities[6] = chk_water_breath.Checked;
             abilities[7] = chk_timecontrol.Checked;
+
+            //----START--------- C# avatar maker app 02 How to use a listbox tutorial -------------------------------
+            // listbox
+            // cities
+            // array or list?
+            List<String> cities = new List<String>();
+
+            // add the selected items to cities
+            foreach(String s in lst_cities.SelectedItems)
+            {
+                cities.Add(s);
+            }
+
+            //-----END---------- C# avatar maker app 02 How to use a listbox tutorial -------------------------------
+
 
             string status_message = "Your new hero is " + txt_name.Text + 
                 " You have selected the following abilities: ";
@@ -60,7 +77,19 @@ namespace HeroMaker
             if (abilities[7])
                 status_message += "Time Control, ";
 
+            //----START--------- C# avatar maker app 02 How to use a listbox tutorial -------------------------------
+            //listbox
+            status_message += "The hero works in these cities: "; 
+            foreach(String city in cities)
+            {
+                status_message += city + ", ";
+            }
+            //-----END---------- C# avatar maker app 02 How to use a listbox tutorial -------------------------------
+
             MessageBox.Show(status_message);
+
+            //------END---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
+
         }
     }
 }

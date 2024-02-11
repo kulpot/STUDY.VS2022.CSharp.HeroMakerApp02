@@ -40,7 +40,7 @@
             this.chk_xray = new System.Windows.Forms.CheckBox();
             this.chk_fly = new System.Windows.Forms.CheckBox();
             this.btn_create = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lst_cities = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +64,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.listBox1);
+            this.groupBox1.Controls.Add(this.lst_cities);
             this.groupBox1.Controls.Add(this.chk_energy);
             this.groupBox1.Controls.Add(this.chk_luck);
             this.groupBox1.Controls.Add(this.chk_fart);
@@ -75,7 +75,7 @@
             this.groupBox1.Controls.Add(this.chk_fly);
             this.groupBox1.Location = new System.Drawing.Point(15, 32);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(327, 228);
+            this.groupBox1.Size = new System.Drawing.Size(327, 251);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Special Abilities";
@@ -170,10 +170,10 @@
             this.btn_create.UseVisualStyleBackColor = true;
             this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
             // 
-            // listBox1
+            // lst_cities
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
+            this.lst_cities.FormattingEnabled = true;
+            this.lst_cities.Items.AddRange(new object[] {
             "Moscow",
             "New York",
             "London",
@@ -182,19 +182,20 @@
             "Hong Kong",
             "Rome",
             "Sydney"});
-            this.listBox1.Location = new System.Drawing.Point(6, 145);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
-            this.listBox1.TabIndex = 4;
+            this.lst_cities.Location = new System.Drawing.Point(6, 145);
+            this.lst_cities.Name = "lst_cities";
+            this.lst_cities.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.lst_cities.Size = new System.Drawing.Size(120, 95);
+            this.lst_cities.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(10, 129);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.Size = new System.Drawing.Size(84, 13);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Office Location";
+            this.label2.Text = "Office Locations";
             // 
             // Form1
             // 
@@ -228,7 +229,7 @@
         private System.Windows.Forms.CheckBox chk_timecontrol;
         private System.Windows.Forms.Button btn_create;
         private System.Windows.Forms.CheckBox chk_energy;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lst_cities;
         private System.Windows.Forms.Label label2;
     }
 }
